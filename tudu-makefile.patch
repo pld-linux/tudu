@@ -1,0 +1,16 @@
+--- tudu-0.4.1-orig/Makefile	2009-04-02 16:47:10.803679387 +0200
++++ tudu-0.4.1/Makefile	2009-04-02 17:07:44.523557265 +0200
+@@ -1,8 +1,8 @@
+-DESTDIR=/usr/local/
+-BIN_DIR=$(DESTDIR)bin
+-ETC_DIR=$(DESTDIR)etc
+-SHARE_DIR=$(DESTDIR)share/tudu
+-MAN_DIR=$(DESTDIR)share/man
++DESTDIR=
++BIN_DIR=$(DESTDIR)/usr/bin
++ETC_DIR=$(DESTDIR)/etc
++SHARE_DIR=$(DESTDIR)/usr/share/tudu
++MAN_DIR=$(DESTDIR)/usr/share/man
+ 
+ all:
+ 	$(MAKE) -C src all SHARE_DIR=$(SHARE_DIR) ETC_DIR=$(ETC_DIR)

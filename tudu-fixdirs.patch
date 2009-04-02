@@ -1,0 +1,27 @@
+--- tudu-0.4.1-orig/src/parser.h	2009-04-02 16:47:10.803679387 +0200
++++ tudu-0.4.1/src/parser.h	2009-04-02 17:15:13.323519985 +0200
+@@ -26,7 +26,7 @@
+ #include "text.h"
+ 
+ #ifndef SHARE_DIR
+-#define SHARE_DIR "/usr/local/share/tudu"
++#define SHARE_DIR "/usr/share/tudu"
+ #endif
+ #define PATH_DTD SHARE_DIR"/tudu.dtd"
+ 
+--- tudu-0.4.1-orig/src/tudu.cc	2009-04-02 16:47:10.803679387 +0200
++++ tudu-0.4.1/src/tudu.cc	2009-04-02 17:16:32.643920100 +0200
+@@ -30,11 +30,11 @@
+ using namespace std;
+ 
+ #ifndef SHARE_DIR
+-#define SHARE_DIR "/usr/local/share/tudu"
++#define SHARE_DIR "/usr/share/tudu"
+ #endif
+ 
+ #ifndef ETC_DIR
+-#define ETC_DIR "/usr/local/etc"
++#define ETC_DIR "/etc"
+ #endif
+ 
+ #define VERSION "TuDu 0.4.1 (2008)"
