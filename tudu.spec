@@ -27,9 +27,9 @@ kategóriája és prioritása. A haladás százalékát is megmutatja.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+%patch -P0 -p1
+%patch -P1 -p1
+%patch -P2 -p1
 %{__sed} -i "s@ncurses.h@ncurses/ncurses.h@" src/*
 %{__sed} -i "s@form.h@ncurses/form.h@" src/*
 
